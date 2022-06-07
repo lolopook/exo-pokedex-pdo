@@ -1,5 +1,5 @@
 <?php
-    var_dump($_GET);
+    var_dump($_POST);
 
         try {
             $bdd = new PDO("mysql:host=localhost:3306;dbname=pokedex;charset=utf8", "root", "root");
@@ -10,8 +10,8 @@
         $req = $bdd->prepare("INSERT INTO pokemon (name,type,image) VALUES (?, ?, '')");
         $req->execute(
             array(
-                $_GET["name"],
-                $_GET["type"]
+                $_POST["name"],
+                $_POST["type"]
                 )
         );
 

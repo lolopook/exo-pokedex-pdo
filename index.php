@@ -24,7 +24,7 @@
     ?>
 
     <div class="container">
-        <form action="./addPokemon.php" class="form-group">
+        <form action="./addPokemon.php" class="form-group" method="post">
             <h2>Entrez les tous</h2>
             <label for="name">Remplir les champs pour rentrer un pokemon</label>
             <input type="text" class="form-control" name="name" id="name" placeholder="PokéName">
